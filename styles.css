@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+nav, .header-main, .header-login, ul {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+nav a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+
+button {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+}
+
+button:active {
+    background-color: rgb(80, 80, 80);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input[type=text], input[type=password] {
+    height: 2rem;
+    width: 11rem;
+    padding: 0.3rem;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+main {
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 1170px;
+    }
+}
+
+.error-text {
+    color: red;
+    font-size: 1.3rem;
+}
+
+.success {
+    color: #0ecc37;
+    font-size: 1.3rem;
+}
